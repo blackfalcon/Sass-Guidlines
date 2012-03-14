@@ -15,12 +15,12 @@ Always use a trailing semi-colon on the last declaration in a SCSS ruleset to av
 
 ## Selctor naming conventions
 
-I personally use underscore delimited lowercase selectors. Why? I can double click on a selector and get the whole thing. '.CamelCase{}', '.hyphen-delimited{}', or '.underscore_delimited{}', as long as you are consistent the rock on!
+I personally use underscore delimited lowercase selectors. Why? I can double click on a selector and get the whole thing. `.CamelCase{}`, `.hyphen-delimited{}`, or `.underscore_delimited{}`, as long as you are consistent the rock on!
 
 ## Working with partials
 
 
-A partial is a SASS document with an underscore preceding the name.  Example, '_widget.scss'. Using this convention, when processed, SASS will not output a standalone CSS file. A partial is simply a resource file that other docs can consume and use. This is essential for managing large libraries of SASS logic, element and widget styles. 
+A partial is a SASS document with an underscore preceding the name.  Example, `_widget.scss`. Using this convention, when processed, SASS will not output a standalone CSS file. A partial is simply a resource file that other docs can consume and use. This is essential for managing large libraries of SASS logic, element and widget styles. 
 
 I have found that the simplest way to manage your SASS files is via a core.scss file consisting of Imported partials and a logical grouping of sub files. With SASS @import works and it works really well, so it is encouraged to break your files into smaller manageable chunks of code. 
 
@@ -29,9 +29,9 @@ SASS and SCSS can live together in perfect harmony. So if you have a reason for 
 
 ## Comments
 
-SCSS supports both invisible and visible comments. Using '//' before any SCSS, this will place a comment in your SCSS code, but will not be output in the processed CSS. 
+SCSS supports both invisible and visible comments. Using `//` before any SCSS, this will place a comment in your SCSS code, but will not be output in the processed CSS. 
 
-Using the standard '/* */' CSS comments in your SCSS, when processed this will be output in your CSS.  
+Using the standard `/* */` CSS comments in your SCSS, when processed this will be output in your CSS.  
 
 Comments in code is awesome. Especially when working with a team. Be kind, leave instructions. 
 
