@@ -37,7 +37,7 @@ Comments in code is awesome. Especially when working with a team. Be kind, leave
 
 ### Nesting
 
-Indenting in Sass is not like indenting in CSS. In Sass indenting has meaning. Sass uses the intention white space to declare parent child relationships. Indention allows the developer to inherit the parent selector, but be mindful, it is easy to fall into the trap of insane selector inheritance. Rule of thumb, if you are tabbing in a third time, is this declaration really that specific to this namespace or can you abstract to be used more universally? 
+Nesting in Sass is not like indenting in CSS. In Sass nesting has meaning. Sass uses the nested white space to declare parent child relationships. Nesting allows the developer to inherit the parent selector, but be mindful, it is easy to fall into the trap of insane selector inheritance. Rule of thumb, if you are tabbing in a third time, is this declaration really that specific to this namespace or can you abstract to be used more universally? 
 
 Just because you are using Sass doesn't mean that you should toss all CSS and OOCSS best practices out the window. 
 
@@ -89,7 +89,7 @@ Just because you are using Sass doesn't mean that you should toss all CSS and OO
 }
 ```
 
-### Decloration best practice
+### Declaration best practice
 
 It is best practice to list your parent specific declarations directly under the class selector and then list the indented child selectors to keep readability as a maximum.  
 
@@ -176,6 +176,20 @@ This will produce the following best practice CSS
 	border: 1px solid grey;
 }
 ```
+
+### @extends gone bad
+
+@extend is an awesome tool, but used unwisely will cause real issues. Something I consider to be best practice is to NEVER USE extends inside a mixin. Depending on how the parent mixin is used in generating more CSS even with the possibility of that mixin being used to create a class that is in turn extended, this can create an amazing array of selectors in your final CSS.
+
+**The Bad**
+
+	need to engineer bad @mixin with @extend example
+	
+**The Bad CSS**
+
+	illustrate css selector blote 
+
+
 
 ### @-Rules and Directives
 
