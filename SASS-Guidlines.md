@@ -4,7 +4,7 @@
 
 ## Syntax and formatting
 
-SASS is written using the multi-line format very similar to CSS. While SASS is the language, SCSS is a version of the syntax. There is no right or wrong, better or worse. Some prefer the SASS syntax, I prefer to work with SCSS. For the purpose of this document I will refer SASS as the language, but code examples will be written as SCSS and file names as ‘.scss‘.  
+SASS is written using the multi-line format very similar to CSS. While SASS is the language, SCSS is a version of the syntax. There is no right or wrong, better or worse. Some prefer the SASS syntax, I prefer to work with SCSS. For the purpose of this document I will refer SASS as the language, but code examples will be written as SCSS and file names as `.scss`.  
 
 ### SASS v. SCSS
 
@@ -113,9 +113,9 @@ If you can't decide to use either SASS or SCSS, the good news is that you don't.
 
 SASS's greatest strength is in it's ability to create dynamic, intelligent and efficiently reusable code. 
 
-### Mixins
+### @mixins
 
-Mixins are a great way to keep your code DRY as well as create logical chunks of code to be reused again and again. Using the ‘@mixin‘ directive you can engineer smart reusable code to be used throughout your application. It is considered best practice to only use a mixin if you are also using arguments like the following. 
+Mixins are a great way to keep your code DRY as well as create logical chunks of code to be reused again and again. Using the `@mixin` directive you can engineer smart reusable code to be used throughout your application. It is considered best practice to only use a mixin if you are also using arguments like the following. 
 
 	@mixin the_box ($padding, $background, $border, $style, $color) {
 		padding: $padding;
@@ -123,7 +123,7 @@ Mixins are a great way to keep your code DRY as well as create logical chunks of
 		border: $border $style $color;
 	}
 	
-To use the mixin use the ‘@include‘ directive like so
+To use the mixin use the `@include` directive like so
 
 	.your_new_class {
 		@include the_box (10px, red, 1px, solid, black);
@@ -131,7 +131,7 @@ To use the mixin use the ‘@include‘ directive like so
 
 ### @extend
 
-If you are not using arguments in your mixin, you should consider using a CSS class object and apply using the ‘@extend‘ directive. Here is a best practice example for creating a stylistic class for use as an extend using a Compass mixin.
+If you are not using arguments in your mixin, you should consider using a CSS class object and apply using the `@extend` directive. Here is a best practice example for creating a stylistic class for use as an extend using a Compass mixin.
 
 	// Style class object
 	.default_grey_border {
