@@ -1,18 +1,18 @@
-# General SASS notes, advice and guidelines
+# General Sass notes, advice and guidelines
 
-**[Follow me on Twitter](http://twitter.com/anotheruiguy) and [tweet these guidelines](https://twitter.com/intent/tweet?text=SCSS+Guidelines+how+to+https://github.com/blackfalcon/SASS-Guidlines).**
+**Follow contributers on Twitter [@anotheruiguy](http://twitter.com/anotheruiguy) and [@ScottKellum](http://twitter.com/ScottKellum)**
 
 ## Syntax and formatting
 
-SASS is written using the multi-line format very similar to CSS. While SASS is the language, SCSS is a version of the syntax. There is no right or wrong, better or worse. Some prefer the SASS syntax, I prefer to work with SCSS. For the purpose of this document I will refer SASS as the language, but code examples will be written as SCSS and file names as `.scss`.  
+Sass is written using the multi-line format very similar to CSS. While Sass is the language, SCSS is a version of the syntax. There is no right or wrong, better or worse. Some prefer the Sass syntax, I prefer to work with SCSS. For the purpose of this document I will refer Sass as the language, but code examples will be written as SCSS and file names as `.scss`.  
 
-### SASS and SCSS
+### Sass and SCSS
 
-Sass has two equally valid syntaxes, Sass and SCSS. Some key differences to be illustrated are, SASS uses less characters and a 'double space' tab for child selector delineation, exactly like HAML. While SCSS uses a syntax that is more representational of CSS and you can use a full 'tab' for child selector delineation. See examples.
+Sass has two equally valid syntaxes, Sass and SCSS. Some key differences to be illustrated are, Sass uses less characters and a 'double space' tab for child selector delineation, exactly like HAML. While SCSS uses a syntax that is more representational of CSS and you can use a full 'tab' for child selector delineation. See examples.
 
-**SASS**
+**Sass**
 
-```sass
+```Sass
 .your_new_class
   margin: 0
   padding: 0
@@ -37,9 +37,9 @@ Comments in code is awesome. Especially when working with a team. Be kind, leave
 
 ### Nesting
 
-Indenting in SASS is not like indenting in CSS. In SASS indenting has meaning. SASS uses the intention white space to declare parent child relationships. Indention allows the developer to inherit the parent selector, but be mindful, it is easy to fall into the trap of insane selector inheritance. Rule of thumb, if you are tabbing in a third time, is this declaration really that specific to this namespace or can you abstract to be used more universally? 
+Indenting in Sass is not like indenting in CSS. In Sass indenting has meaning. Sass uses the intention white space to declare parent child relationships. Indention allows the developer to inherit the parent selector, but be mindful, it is easy to fall into the trap of insane selector inheritance. Rule of thumb, if you are tabbing in a third time, is this declaration really that specific to this namespace or can you abstract to be used more universally? 
 
-Just because you are using SASS doesn't mean that you should toss all CSS and OOCSS best practices out the window. 
+Just because you are using Sass doesn't mean that you should toss all CSS and OOCSS best practices out the window. 
 
 **The Good**
 
@@ -116,16 +116,16 @@ I personally use underscore delimited lowercase selectors. Why? I can double cli
 
 ## Working with partials
 
-A partial in SASS is a document with an underscore preceding the name.  Example, `_widget.scss`. Using this convention, when processed, SASS will not output a standalone CSS file. A partial is simply a resource file that other docs can consume and use. This is essential for managing large libraries of SASS logic, element and widget styles. 
+A partial in Sass is a document with an underscore preceding the name.  Example, `_widget.scss`. Using this convention, when processed, Sass will not output a standalone CSS file. A partial is simply a resource file that other docs can consume and use. This is essential for managing large libraries of Sass logic, element and widget styles. 
 
-I have found that the simplest way to manage your SASS files is via a core.scss file consisting of imported partials and a logical grouping of sub files. With SASS @import works and it works really well, unlike standard CSS. It is encouraged to break your files into smaller manageable chunks of code. 
+I have found that the simplest way to manage your Sass files is via a core.scss file consisting of imported partials and a logical grouping of sub files. With Sass @import works and it works really well, unlike standard CSS. It is encouraged to break your files into smaller manageable chunks of code. 
 
-If you can't decide to use either SASS or SCSS, the good news is that you don't. SASS and SCSS files can live together in perfect harmony. So if you have a reason for using one syntax over another for specific use cases, this is acceptable. For example, some like to use SCSS for logic building and then use SASS for design building. You do not need to state either SCSS or SASS with the @import function, just the path to the partial.
+If you can't decide to use either Sass or SCSS, the good news is that you don't. Sass and SCSS files can live together in perfect harmony. So if you have a reason for using one syntax over another for specific use cases, this is acceptable. For example, some like to use SCSS for logic building and then use Sass for design building. You do not need to state either SCSS or Sass with the @import function, just the path to the partial.
 
 
 ## Dynamic and reusable code
 
-SASS's greatest strength is in it's ability to create dynamic, intelligent and efficiently reusable code. 
+Sass's greatest strength is in it's ability to create dynamic, intelligent and efficiently reusable code. 
 
 ### @mixins
 
@@ -183,7 +183,7 @@ One of the advantages Sass has over other languages are control directives. This
 
 ### Functions
 
-Sass has built in functions like `percentage($value)` along with [plenty of others](http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html). However you can build your own functions to help with calculations and generating values for a verity of use cases. Below is an exponent function that can be used on any value.
+Sass has built in functions like `percentage($value)` along with [plenty of others](http://Sass-lang.com/docs/yardoc/Sass/Script/Functions.html). However you can build your own functions to help with calculations and generating values for a verity of use cases. Below is an exponent function that can be used on any value.
 
 ```scss
 @function exponent($base, $exponent) {
