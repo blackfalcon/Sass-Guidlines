@@ -1,2 +1,2 @@
-[Guidelines](blob/master/SASS-Guidlines.md)
-[Links](blob/master/SASS-Links.md)
+[Guidelines](/blackfalcon/SASS-Guidlines/blob/master/SASS-Guidlines.md)
+[Links](/blackfalcon/SASS-Guidlines/blob/master/SASS-Links.md)
