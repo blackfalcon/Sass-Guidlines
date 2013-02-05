@@ -180,16 +180,7 @@ This will produce the following best practice CSS
 ### @extends gone bad
 
 @extend is an awesome tool, but used unwisely will cause real issues. Something I consider to be best practice is to NEVER USE extends inside a mixin. Depending on how the parent mixin is used in generating more CSS even with the possibility of that mixin being used to create a class that is in turn extended, this can create an amazing array of selectors in your final CSS.
-
-**The Bad**
-
-	need to engineer bad @mixin with @extend example
-	
-**The Bad CSS**
-
-	illustrate css selector blote 
-
-
+More on how [extends loop your Sass](https://gist.github.com/blackfalcon/4693231).
 
 ### @-Rules and Directives
 
